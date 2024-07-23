@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 400px;
+  margin: 150px auto;
+  position: relative;
+}
+
+.pause {
+  margin-bottom: 68px;
+}
+
+.glow {
+  background-color: var(--Neon-Green);
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+}
+
+.glow:hover {
+  box-shadow: 0 0 10px var(--Neon-Green);
+}
+
+.quo {
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+
+.adv {
+  color: var(--Neon-Green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-family: "Manrope", sans-serif;
+}
+/* ===========MOBILE VERSION================ */
+
+@media (max-width: 500px) {
+  .card {
+    width: 350px;
+  }
+}
